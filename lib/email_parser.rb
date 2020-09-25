@@ -13,7 +13,7 @@ class EmailAddressParser
     rows = email.split("\n")
     email_address = rows.collect do |row|
       data = row.split(", ")
-      
+      email = data[0]
     
   end
   
