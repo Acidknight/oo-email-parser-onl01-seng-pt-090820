@@ -10,7 +10,8 @@ class EmailAddressParser
   end
   
   def parse(email)
-    rows = email.split
+    rows = email.split("\n")
+    
     
   end
   
