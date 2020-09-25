@@ -9,17 +9,11 @@ class EmailAddressParser
     @email = email
   end
   
-  def parse(email)
-    rows = email.split("\n")
-    email_address = rows.collect do |row|
-      data = row.split(", ")
-      email = data[0]
-      
-      person = self.new 
-      person.name = name
+  def parse 
+    csv_emails.split.collect do |address|
+      address.split(',') 
     end
-    email_address
-    
-  end
+    .flatten.uniq 
+  end 
   
 end
