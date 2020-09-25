@@ -18,6 +18,7 @@ class EmailAddressParser
       person = self.new 
       person.name = name
     end
+    email_address
     
   end
   
