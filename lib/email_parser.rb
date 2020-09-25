@@ -11,7 +11,8 @@ class EmailAddressParser
   
   def parse(email)
     rows = email.split("\n")
-    email_address = rows.collect do 
+    email_address = rows.collect do |row|
+      
     
   end
   
